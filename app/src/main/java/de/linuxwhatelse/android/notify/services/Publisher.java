@@ -96,9 +96,9 @@ public class Publisher extends AsyncTask<Object, Void, Boolean> {
             conn.setDoOutput(true);
             conn.setFixedLengthStreamingMode(bytes.length);
             conn.setRequestMethod("POST");
-            conn.setRequestProperty("Accept-Encoding", "identity");
-            conn.setRequestProperty("Content-Type", "application/json; charset=utf-8");
-            conn.setRequestProperty("Authorization", "Basic " + auth);
+            //conn.setRequestProperty("Accept-Encoding", "identity");
+            //conn.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+            //conn.setRequestProperty("Authorization", "Basic " + auth);
 
             BufferedOutputStream out = new BufferedOutputStream(conn.getOutputStream());
 
